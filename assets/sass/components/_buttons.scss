@@ -12,3 +12,19 @@ button{
 
     }
 }
+    
+.cta{
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+  justify-content: flex-end;
+  button{
+    width: 33%;
+    height: 40px;
+    font-size: 12px;
+    padding:6px 18.5px 6.7px 18px;
+    line-height: 1.5;
+  }
+
+
+}

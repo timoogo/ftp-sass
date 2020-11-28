@@ -6,10 +6,17 @@ h1{
 }
 h2{
 
-        font-family: 'Poppins', sans-serif;
+    margin-bottom: 19px;
+    font-family: $poppins;
         font-size: 50px;    
-        font-weight: 300;
+        font-weight: 500;
+        @include capitalize;
  
+}
+h3{
+    @include uppercase;
+    margin-bottom: 19px;
+    font-family: $poppins;
 }
 a{
     color: $primary-clear;
@@ -29,6 +36,7 @@ ul li a{
 p{
     color: $waterloo-grey;
    @include capitalize; 
+   font-family: $poppins;
     
 }
 span{

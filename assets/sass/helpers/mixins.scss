@@ -1,6 +1,9 @@
-@mixin capitalize {
+@mixin uppercase {
     text-transform: uppercase;
 }
 @mixin normalize {
     text-transform: none;
+}
+@mixin capitalize {
+    text-transform: capitalize;
 }
