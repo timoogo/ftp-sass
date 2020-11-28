@@ -28,6 +28,9 @@
             margin-bottom: 40px;
         }
     }
+    .hero-image{
+        flex-basis: 55%;
+    }
 
 
 
@@ -60,4 +63,5 @@ img.background
         position: absolute;
         top: 0;
         right: 0;
+        //je ne sais pas pourquoi il y a une rotation de 0.01deg sur l'image
     }
