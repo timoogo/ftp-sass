@@ -31,3 +31,11 @@ p{
    @include capitalize; 
     
 }
+span{
+    &.tag{
+        color: $cornflower-two ;
+        margin: 0 6.4px 6px 0;
+        font-family: Lobster;
+        font-size: 20px;
+    }
+}

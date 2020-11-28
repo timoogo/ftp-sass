@@ -12,6 +12,7 @@
         align-content: space-around;
         justify-content: flex-start;
         flex-basis: 30%;
+        height: 30vh;
 
         h2 {
             @extend h2;
@@ -30,13 +31,16 @@
     }
     .hero-image{
         flex-basis: 55%;
+        img{
+            width: 80%;
+        }
     }
 
 
 
 
 }
-.bottom-hero  {
+.mouse  {
     display: flex;
     justify-content: center;
     a{

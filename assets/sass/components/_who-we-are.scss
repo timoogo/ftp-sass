@@ -1,0 +1,39 @@
+ [who-we-are]{
+    margin-top: 25vh;
+    display: flex;
+    justify-content: space-around;  
+    height: 80vh;
+
+    width: 90%;
+  
+    & .bg{
+        width: 200%;
+        height: 100%;
+        z-index: -9;
+        position: absolute;
+        top: 0;
+        left:  -5vw;
+        background-image: url("/assets/img/background-we-are.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+ 
+    & section{
+        position: relative;
+        flex-basis: 40%;
+        margin-top: 50px;
+        & p{
+            @include normalize;
+            font-family: $poppins;
+            font-size: 20px;
+            font-weight: lighter;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+    }
+    
+}
+    
+    
