@@ -162,7 +162,7 @@ aside {
     justify-content: stretch;
     flex-wrap: wrap; }
   [ourServices] .card.service {
-    margin: 10vh 19px;
+    margin: 55px 19px;
     background-color: #ffffff;
     height: 410px;
     width: 30%;
