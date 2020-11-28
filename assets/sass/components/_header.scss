@@ -1,0 +1,29 @@
+ header{
+    width: $container;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    
+    nav{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+        ul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            li {
+                list-style: none;
+                margin: auto 2rem;
+                text-transform: uppercase;
+                
+                
+            }
+    
+        }
+    }
+    
+}

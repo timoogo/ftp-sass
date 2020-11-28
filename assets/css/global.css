@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.wrapper {
+  position: relative; }
+
+h1 {
+  font-size: 60px;
+  color: #1a129f;
+  margin-bottom: -50px; }
+
+h2, .hero-container .top-hero .hero-content h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: 300; }
+
+a {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif; }
+  a:link {
+    text-decoration: none; }
+  a:hover {
+    text-decoration: solid 1px red !important;
+    color: red; }
+  a ul li a {
+    color: #ffffff !important; }
+
+p {
+  color: #7a839e;
+  text-transform: uppercase; }
+
+.container-fluid {
+  display: flex;
+  width: 100%;
+  height: 60vh; }
+
+.hero-container .top-hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  position: relative; }
+  .hero-container .top-hero .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: flex-start;
+    flex-basis: 30%; }
+    .hero-container .top-hero .hero-content h2 {
+      text-transform: uppercase; }
+      .hero-container .top-hero .hero-content h2 span {
+        font-weight: 600 !important; }
+    .hero-container .top-hero .hero-content p {
+      width: 95%;
+      line-height: 1.56;
+      margin-bottom: 40px; }
+
+.bottom-hero a {
+  margin: auto;
+  text-align: center;
+  display: block; }
+
+img.background {
+  z-index: -9;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+aside {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 73px;
+  justify-content: center;
+  align-items: center; }
+  aside a {
+    display: inline;
+    margin: 21px auto; }
+    aside a:last-of-type::after {
+      content: "";
+      position: relative;
+      display: block;
+      border-top: 30px solid #1a129f;
+      width: 1px;
+      margin: 10px auto; }
+
+header {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  height: 15vh; }
+  header nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    header nav ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      header nav ul li {
+        list-style: none;
+        margin: auto 2rem;
+        text-transform: uppercase; }
+
+button {
+  padding: 13px 40px;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #1a129f 0, #6156f9 100%);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: button-line-height;
+  border: 1px solid transparent; }
+  button:hover {
+    background-color: #6156f9; }

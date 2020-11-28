@@ -1,0 +1,33 @@
+
+h1{
+    font-size: 60px;
+    color: $blue-gem;
+    margin-bottom: -50px;
+}
+h2{
+
+        font-family: 'Poppins', sans-serif;
+        font-size: 50px;    
+        font-weight: 300;
+ 
+}
+a{
+    color: $primary-clear;
+    font-family: $poppins;
+    &:link{
+        text-decoration: none;
+    }
+
+    &:hover{
+        text-decoration: solid 1px red !important;
+        color: red;
+    }
+ul li a{
+    color: $primary-clear !important;
+}
+}
+p{
+    color: $waterloo-grey;
+   @include capitalize; 
+    
+}

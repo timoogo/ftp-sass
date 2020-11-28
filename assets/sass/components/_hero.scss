@@ -1,0 +1,47 @@
+.hero-container .top-hero {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: flex-start;
+        flex-basis: 30%;
+
+        h2 {
+            @extend h2;
+            @include capitalize;
+
+            span {
+                font-weight: 600 !important;
+            }
+        }
+
+        p {
+            width: 95%;
+            line-height: 1.56;
+            margin-bottom: 40px;
+        }
+    }
+
+
+
+
+}
+.bottom-hero a {
+    margin: auto;
+text-align: center;
+    display: block;
+}
+img.background
+{
+        z-index: -9;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }

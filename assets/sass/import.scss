@@ -1,0 +1,19 @@
+@import "../sass/helpers/variables.scss";
+@import "../sass/helpers/mixins.scss";
+
+@import "./components/_reset.scss";
+@import "./components/_wrapper.scss";
+
+
+
+@import "./components/_typos.scss";
+@import "./components/_container-fluid.scss";
+@import "./components/hero.scss";
+@import "./components/_aside.scss";
+
+
+
+@import "./components/_header.scss";
+@import "./components/_buttons.scss";
+@import "./components/_cards.scss";
+@import "./components/_footer.scss";
