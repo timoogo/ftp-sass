@@ -33,10 +33,26 @@
 
 
 }
-.bottom-hero a {
-    margin: auto;
-text-align: center;
-    display: block;
+.bottom-hero  {
+    display: flex;
+    justify-content: center;
+    a{
+       align-self: center;
+        text-align: center;
+            display: block;
+            margin-top: 70px;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            box-shadow:  0 10px 20px 0 rgba(126, 118, 249, 0.16);
+            background-color:$primary-clear ;
+            img{
+                align-items: center;
+                height: 50%;
+                margin: 25px auto;
+        
+            }
+    }
 }
 img.background
 {
