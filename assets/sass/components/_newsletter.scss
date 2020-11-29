@@ -27,6 +27,12 @@
             border-color: $pale-grey 1px solid;
             border-radius: 5px;
             padding-left:15px ;
+            &::placeholder{
+                @include capitalize;
+                font-family: $poppins;
+                font-size: 12px;
+                color: $dusty-grey;
+            }
        
         }
         button{
