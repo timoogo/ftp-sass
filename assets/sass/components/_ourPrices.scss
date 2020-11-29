@@ -1,5 +1,5 @@
 [ourPrices]{
-  height: 100vh;
+  height: 818px;
   position: relative;
   & h2, span.tag{
       text-align: center;
@@ -17,5 +17,8 @@
         position: absolute;
         top: 0;
         z-index: -9;
+    }
+    &.cards{
+      margin: auto;
     }
 }

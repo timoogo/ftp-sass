@@ -153,7 +153,7 @@ aside {
     [who-we-are] section p {
       text-transform: none;
       font-family: "Poppins", sans-serif;
-      font-size: 20px;
+      font-size: 16px;
       font-weight: lighter;
       font-stretch: normal;
       font-style: normal;
@@ -163,7 +163,7 @@ aside {
 .cards {
   display: flex;
   flex-direction: row;
-  justify-content: stretch;
+  justify-content: center;
   flex-wrap: wrap; }
 
 .card {
@@ -217,11 +217,11 @@ aside {
   [ourServices] .cards {
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
+    justify-content: center;
     flex-wrap: wrap; }
 
 [ourPrices] {
-  height: 100vh;
+  height: 818px;
   position: relative; }
   [ourPrices] h2, [ourPrices] .hero-container .top-hero .hero-content h2, .hero-container .top-hero .hero-content [ourPrices] h2, [ourPrices] span.tag {
     text-align: center;
@@ -236,6 +236,8 @@ aside {
     position: absolute;
     top: 0;
     z-index: -9; }
+  [ourPrices].cards {
+    margin: auto; }
 
 [newsletter] {
   display: flex;
@@ -331,3 +333,44 @@ button:not(.filled) {
   flex-direction: row;
   margin-top: 25px;
   justify-content: flex-end; }
+
+footer {
+  background-image: url("/assets/img/footer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 60vh;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+  footer a {
+    color: #ffffff !important; }
+  footer section [brand],
+  footer [quickLinks],
+  footer [hours],
+  footer [contact] {
+    margin-top: 150px;
+    border: 1px solid red;
+    height: fit-content;
+    font-family: "Poppins", sans-serif; }
+    footer section [brand] ul li,
+    footer [quickLinks] ul li,
+    footer [hours] ul li,
+    footer [contact] ul li {
+      color: #ffffff;
+      list-style: none; }
+  footer section[brand] .social-medias img:nth-child(2) {
+    transform: rotate(-90deg); }
+  footer section[hours] {
+    width: 15vw; }
+    footer section[hours] ul {
+      display: flex;
+      flex-direction: column; }
+      footer section[hours] ul li {
+        display: flex !important;
+        justify-content: space-between !important; }
+  footer section [contact] div.links {
+    margin: 5vh auto;
+    flex-basis: fill; }

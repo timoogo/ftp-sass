@@ -11,7 +11,7 @@
 @mixin card-container {        
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -28,4 +28,8 @@
           background-color: $cornflower-blue;
   
       }
+  }
+
+  @mixin rotate{
+      transform: rotate(-90deg);
   }
