@@ -7,3 +7,25 @@
 @mixin capitalize {
     text-transform: capitalize;
 }
+
+@mixin card-container {        
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    flex-wrap: wrap;
+}
+
+@mixin button-filled{
+    padding: 13px 40px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, $blue-gem 0, $cornflower-blue 100%);
+    color: $primary-clear;
+    text-transform: uppercase;
+    font-size: $button-font-size;
+    line-height: button-line-height;
+    border: 1px solid $transparent;
+      &:hover{
+          background-color: $cornflower-blue;
+  
+      }
+  }

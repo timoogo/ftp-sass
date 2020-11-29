@@ -1,0 +1,38 @@
+[newsletter]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 421px;
+    & h2{
+        text-transform: none;
+        font-weight: 300;
+        font-size: 32px;
+        color: $primary-grey;
+        margin-bottom: 5vh;
+        & .bold{
+            font-weight: bold;
+        }
+    }
+    & form{
+        width: 50vw;
+     display: flex;
+     flex-direction: row;
+        input{
+            width: 80%;
+            margin: auto;
+            height: 45px;
+            background-color: $pale-grey;
+            border-color: $pale-grey 1px solid;
+            border-radius: 5px;
+            padding-left:15px ;
+       
+        }
+        button{
+            margin-left: 3vw;
+        }
+        
+    }
+
+}

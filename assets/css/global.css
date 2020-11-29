@@ -3,6 +3,14 @@
   padding: 0;
   box-sizing: border-box; }
 
+input {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
 .wrapper {
   position: relative; }
 
@@ -152,32 +160,112 @@ aside {
       line-height: 1.2;
       margin-bottom: 25px; }
 
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  flex-wrap: wrap; }
+
+.card {
+  margin: 55px 19px;
+  background-color: #ffffff;
+  height: 410px;
+  width: 30%;
+  box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.16);
+  border-radius: 56px;
+  padding: 20px; }
+  .card.pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 373px; }
+    .card.pricing h3 {
+      text-transform: capitalize;
+      text-align: center;
+      margin-top: 32.5px;
+      font-size: 28px;
+      font-family: "Lobster", sans-serif;
+      color: #42495b; }
+    .card.pricing p {
+      text-align: center;
+      align-self: center;
+      padding: auto 40px; }
+    .card.pricing span {
+      font-weight: 600;
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+      color: #1000ff;
+      margin: -10px auto; }
+      .card.pricing span::before {
+        content: '$ '; }
+  .card.service img {
+    display: block;
+    margin: 30px auto; }
+  .card.service p {
+    font-family: "Lato", sans-serif !important;
+    font-size: 15px;
+    text-transform: initial !important; }
+  .card.service:nth-child(4) button {
+    margin-top: 40px; }
+
 [ourServices] {
   width: calc(100% - 320px / 2);
-  margin: auto;
+  margin: 15vh auto 5vh;
   background-image: url("/assets/img/background-service.png"); }
   [ourServices] .cards {
     display: flex;
     flex-direction: row;
     justify-content: stretch;
     flex-wrap: wrap; }
-  [ourServices] .card.service {
-    margin: 55px 19px;
-    background-color: #ffffff;
-    height: 410px;
-    width: 30%;
-    box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.16);
-    border-radius: 56px;
-    padding: 20px; }
-    [ourServices] .card.service img {
-      display: block;
-      margin: 30px auto; }
-    [ourServices] .card.service p {
-      font-family: "Lato", sans-serif !important;
-      font-size: 15px;
-      text-transform: initial !important; }
-    [ourServices] .card.service:nth-child(4) button {
-      margin-top: 40px; }
+
+[ourPrices] {
+  height: 100vh;
+  position: relative; }
+  [ourPrices] h2, [ourPrices] .hero-container .top-hero .hero-content h2, .hero-container .top-hero .hero-content [ourPrices] h2, [ourPrices] span.tag {
+    text-align: center;
+    display: block; }
+  [ourPrices] .heading {
+    padding-top: 5vh; }
+  [ourPrices] .background.price {
+    background-color: #7e76f9;
+    opacity: 0.15;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -9; }
+
+[newsletter] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 421px; }
+  [newsletter] h2, [newsletter] .hero-container .top-hero .hero-content h2, .hero-container .top-hero .hero-content [newsletter] h2 {
+    text-transform: none;
+    font-weight: 300;
+    font-size: 32px;
+    color: #42495b;
+    margin-bottom: 5vh; }
+    [newsletter] h2 .bold, [newsletter] .hero-container .top-hero .hero-content h2 .bold, .hero-container .top-hero .hero-content [newsletter] h2 .bold {
+      font-weight: bold; }
+  [newsletter] form {
+    width: 50vw;
+    display: flex;
+    flex-direction: row; }
+    [newsletter] form input {
+      width: 80%;
+      margin: auto;
+      height: 45px;
+      background-color: #f6f7fb;
+      border-color: #f6f7fb 1px solid;
+      border-radius: 5px;
+      padding-left: 15px; }
+    [newsletter] form button {
+      margin-left: 3vw; }
 
 header {
   width: 80%;
@@ -198,7 +286,7 @@ header {
         margin: auto 2rem;
         text-transform: uppercase; }
 
-button {
+button.filled {
   padding: 13px 40px;
   border-radius: 25px;
   background: linear-gradient(90deg, #1a129f 0, #6156f9 100%);
@@ -207,17 +295,34 @@ button {
   font-size: 16px;
   line-height: button-line-height;
   border: 1px solid transparent; }
-  button:hover {
+  button.filled:hover {
     background-color: #6156f9; }
+
+button:not(.filled) {
+  margin: 40px 59.9px 0 60.6px;
+  padding: 13px 40px;
+  background-color: #ffffff;
+  border: solid 1px #1000ff;
+  text-transform: capitalize;
+  font-size: 16px;
+  line-height: button-line-height;
+  border-radius: 24px;
+  color: #7a839e;
+  font-family: "Poppins", sans-serif; }
+  button:not(.filled):hover {
+    padding: 13px 40px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #1a129f 0, #6156f9 100%);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: button-line-height;
+    border: 1px solid transparent; }
+    button:not(.filled):hover:hover {
+      background-color: #6156f9; }
 
 .cta {
   display: flex;
   flex-direction: row;
   margin-top: 25px;
   justify-content: flex-end; }
-  .cta button {
-    width: 33%;
-    height: 40px;
-    font-size: 12px;
-    padding: 6px 18.5px 6.7px 18px;
-    line-height: 1.5; }
