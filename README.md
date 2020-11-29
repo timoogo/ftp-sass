@@ -11,6 +11,6 @@ J'ai essayé de mettre un maximum de `@mixin` et si j'avais plus de temps, j'en 
 
 Pour le responsive, je me suis basé sur une déclinaison que j'ai fait en rentrant de l'enterrement, et je vous laisse, si vous le souhaitez, un lien pour le télécharger (j'en ai eu pour une 30aine de minutes
 
-[le lien] (https://we.tl/t-5Ybx4AKX4b)
+[le lien](https://we.tl/t-5Ybx4AKX4b)
 
 Merci pour votre lecture !
