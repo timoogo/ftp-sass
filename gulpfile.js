@@ -31,12 +31,8 @@ function watcher(done){
     done();
 }
 
-// Clean
-function clean() {
-    return del('./img/')
-}
 
 module.exports = {
     browser: parallel(browser, watcher),
-    sass, watcher, clean
+    sass, watcher
 }
