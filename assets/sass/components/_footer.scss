@@ -93,13 +93,16 @@ footer {
                 &:nth-child(1){
                     margin-top: 100vh;
                 }
-                & section[contact]{
-                    .links > div  {
-                       border:red 1px solid;
+                & section[brand]{
+                    flex-basis: 100%;
+                    & a{
+                        & img{
+                            color: #fff;
+                        }
                     }
-                }
             }
             
         }
         
       }
+    }

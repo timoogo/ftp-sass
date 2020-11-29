@@ -529,5 +529,7 @@ footer {
       margin: 100px; }
       footer section:nth-child(1) {
         margin-top: 100vh; }
-      footer section section[contact] .links > div {
-        border: red 1px solid; } }
+      footer section section[brand] {
+        flex-basis: 100%; }
+        footer section section[brand] a img {
+          color: #fff; } }
