@@ -42,3 +42,30 @@
     }
 
 }
+@media (min-width: 375px) and (max-width: 768px) {
+    [newsletter]{
+      h2{
+          text-align: center;
+        }
+       
+          & form {
+              display: flex;
+              flex-direction: column;
+              margin: 0;
+              width: 70%;
+
+              & input{
+                display: inline;
+                width: 100%;
+            }
+                    & button {
+                        margin-top: 3vh;
+                        align-self: center;
+                        width: 100%;
+                        padding: 13px 40px;
+          
+                    }
+          }
+        
+    }
+}

@@ -22,3 +22,32 @@
       margin: auto;
     }
 }
+    
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  
+}
+@media (min-width: 375px) and (max-width: 768px) {
+
+  [ourPrices]{
+   // idem que pour ourservices, du js aurait été mis pour faire un slider / slide-show. Pour faire un petit changement, je laisse volontarement le tag + le h2 centré  
+   height: 220vh;
+   .cards{
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+
+    //avec plus de temps j'aurais utilisé du JS pour faire un slideshow plutôt que d'avoir 6 card a scroll 
+    .card{
+      width: 90%;
+      & button {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+  }
+
+  
+}

@@ -6,3 +6,13 @@
 
 
 }
+@media (min-width: 375px) and (max-width: 768px) {
+    .container-fluid .hero-g{
+        justify-content: center;
+        height: 110vh;
+    }
+    .container-fluid{
+        position: relative;
+        
+    }
+}

@@ -59,6 +59,13 @@ span.tag {
   width: 100%;
   height: 60vh; }
 
+@media (min-width: 375px) and (max-width: 768px) {
+  .container-fluid .hero-g {
+    justify-content: center;
+    height: 110vh; }
+  .container-fluid {
+    position: relative; } }
+
 .hero-container .top-hero {
   width: 100%;
   display: flex;
@@ -80,7 +87,11 @@ span.tag {
     .hero-container .top-hero .hero-content p {
       width: 95%;
       line-height: 1.56;
-      margin-bottom: 40px; }
+      margin-bottom: 45px; }
+    .hero-container .top-hero .hero-content button {
+      width: 63%;
+      margin: 0px;
+      padding: 18px 3px; }
   .hero-container .top-hero .hero-image {
     flex-basis: 55%; }
     .hero-container .top-hero .hero-image img {
@@ -110,6 +121,38 @@ img.background {
   top: 0;
   right: 0; }
 
+@media (min-width: 375px) and (max-width: 768px) {
+  .hero-container .top-hero {
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center; }
+    .hero-container .top-hero h2, .hero-container .top-hero .hero-content h2 {
+      font-size: 25px;
+      text-align: center;
+      color: #ffffff; }
+    .hero-container .top-hero p {
+      color: #ffffff;
+      font-size: 15px;
+      margin: auto;
+      width: max-content; }
+    .hero-container .top-hero .hero-image {
+      display: none; }
+    .hero-container .top-hero button {
+      height: 56px;
+      background-color: #fff !important;
+      background: none;
+      color: #7a839e;
+      border: 1px solid #1000ff; }
+      .hero-container .top-hero button:hover {
+        background: linear-gradient(90deg, #1a129f 0, #6156f9 100%);
+        color: #ffffff; }
+  img.background {
+    width: 140%; }
+  .mouse {
+    position: absolute;
+    top: 90px;
+    right: 60px; } }
+
 aside {
   width: 20%;
   display: flex;
@@ -127,6 +170,13 @@ aside {
       border-top: 30px solid #1a129f;
       width: 1px;
       margin: 10px auto; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */ }
+
+@media (min-width: 375px) and (max-width: 768px) {
+  aside {
+    display: none; } }
 
 [who-we-are] {
   margin-top: 25vh;
@@ -159,6 +209,23 @@ aside {
       font-style: normal;
       line-height: 1.2;
       margin-bottom: 25px; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */ }
+
+@media (min-width: 375px) and (max-width: 768px) {
+  [who-we-are] {
+    flex-direction: column;
+    margin-top: 4vh !important;
+    margin: auto;
+    margin-bottom: 50vh; }
+    [who-we-are] section {
+      justify-content: center; }
+    [who-we-are] button {
+      margin-left: 55vw;
+      margin-top: 15vh;
+      display: block;
+      width: 40% !important; } }
 
 .cards {
   display: flex;
@@ -200,6 +267,8 @@ aside {
       margin: -10px auto; }
       .card.pricing span::before {
         content: '$ '; }
+    .card.pricing button {
+      margin: 40px 59.9px 0 60.6px; }
   .card.service img {
     display: block;
     margin: 30px auto; }
@@ -220,6 +289,26 @@ aside {
     justify-content: center;
     flex-wrap: wrap; }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */ }
+
+@media (min-width: 375px) and (max-width: 768px) {
+  [ourServices] {
+    width: 90%; }
+    [ourServices] h2, [ourServices] .hero-container .top-hero .hero-content h2, .hero-container .top-hero .hero-content [ourServices] h2 {
+      text-align-last: left; }
+    [ourServices] .tag {
+      text-align: left;
+      display: block; }
+    [ourServices] .cards {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: center; }
+      [ourServices] .cards .card {
+        width: 90%; }
+        [ourServices] .cards .card button {
+          width: 100%; } }
+
 [ourPrices] {
   height: 818px;
   position: relative; }
@@ -238,6 +327,22 @@ aside {
     z-index: -9; }
   [ourPrices].cards {
     margin: auto; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */ }
+
+@media (min-width: 375px) and (max-width: 768px) {
+  [ourPrices] {
+    height: 220vh; }
+    [ourPrices] .cards {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: center; }
+      [ourPrices] .cards .card {
+        width: 90%; }
+        [ourPrices] .cards .card button {
+          width: 100%;
+          margin: 0; } }
 
 [newsletter] {
   display: flex;
@@ -274,6 +379,23 @@ aside {
     [newsletter] form button {
       margin-left: 3vw; }
 
+@media (min-width: 375px) and (max-width: 768px) {
+  [newsletter] h2, [newsletter] .hero-container .top-hero .hero-content h2, .hero-container .top-hero .hero-content [newsletter] h2 {
+    text-align: center; }
+  [newsletter] form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 70%; }
+    [newsletter] form input {
+      display: inline;
+      width: 100%; }
+    [newsletter] form button {
+      margin-top: 3vh;
+      align-self: center;
+      width: 100%;
+      padding: 13px 40px; } }
+
 header {
   width: 80%;
   margin: auto;
@@ -293,6 +415,23 @@ header {
         margin: auto 2rem;
         text-transform: uppercase; }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */ }
+
+@media (min-width: 375px) and (max-width: 768px) {
+  header a {
+    align-self: center; }
+    header a h1 {
+      color: #ffffff;
+      width: 100%;
+      text-align: center;
+      font-size: 22px; }
+      header a h1 img {
+        display: none;
+        text-align: center; }
+  header nav {
+    display: none; } }
+
 button.filled {
   padding: 13px 40px;
   border-radius: 25px;
@@ -302,8 +441,6 @@ button.filled {
   font-size: 16px;
   line-height: button-line-height;
   border: 1px solid transparent; }
-  button.filled:hover {
-    background-color: #6156f9; }
 
 button:not(.filled) {
   margin: 40px 59.9px 0 60.6px;
@@ -312,27 +449,27 @@ button:not(.filled) {
   border: solid 1px #1000ff;
   text-transform: capitalize;
   font-size: 16px;
-  line-height: button-line-height;
+  line-height: 25px;
   border-radius: 24px;
   color: #7a839e;
   font-family: "Poppins", sans-serif; }
   button:not(.filled):hover {
-    padding: 13px 40px;
-    border-radius: 25px;
     background: linear-gradient(90deg, #1a129f 0, #6156f9 100%);
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 16px;
-    line-height: button-line-height;
-    border: 1px solid transparent; }
-    button:not(.filled):hover:hover {
-      background-color: #6156f9; }
+    font-size: 16px; }
 
 .cta {
   display: flex;
   flex-direction: row;
   margin-top: 25px;
   justify-content: flex-end; }
+
+@media (min-width: 375px) and (max-width: 768px) {
+  button.filled {
+    height: 5vh;
+    padding: 3vh auto;
+    width: 30%; } }
 
 footer {
   background-image: url("/assets/img/footer.png");
@@ -344,7 +481,8 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
   footer a {
     color: #ffffff !important; }
   footer section [brand],
@@ -352,7 +490,6 @@ footer {
   footer [hours],
   footer [contact] {
     margin-top: 150px;
-    border: 1px solid red;
     height: fit-content;
     font-family: "Poppins", sans-serif; }
     footer section [brand] ul li,
@@ -361,6 +498,8 @@ footer {
     footer [contact] ul li {
       color: #ffffff;
       list-style: none; }
+  footer section[brand] span {
+    font-family: "Poppins", sans-serif; }
   footer section[brand] .social-medias img:nth-child(2) {
     transform: rotate(-90deg); }
   footer section[hours] {
@@ -374,3 +513,21 @@ footer {
   footer section [contact] div.links {
     margin: 5vh auto;
     flex-basis: fill; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */ }
+
+@media (min-width: 375px) and (max-width: 768px) {
+  footer {
+    height: fit-content;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between; }
+    footer section {
+      flex-basis: 50%;
+      min-width: 25vw;
+      margin: 100px; }
+      footer section:nth-child(1) {
+        margin-top: 100vh; }
+      footer section section[contact] .links > div {
+        border: red 1px solid; } }

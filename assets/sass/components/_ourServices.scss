@@ -7,7 +7,39 @@
        @include card-container;
 
     }
-    & .card.service{
+}
+    
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    /* CSS */
+    
+  }
+  @media (min-width: 375px) and (max-width: 768px) {
+
+    [ourServices]{
+      width: 90%;
+      h2{
+        text-align-last: left;
+      }
+      .tag{
+        text-align: left;
+        display: block;
+      }
+      .cards{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+
+        //avec plus de temps j'aurais utilisé du JS pour faire un slideshow plutôt que d'avoir 6 card a scroll 
+        .card{
+          width: 90%;
+          & button {
+            width: 100%;
+            
+          }
+        }
+      }
 
     }
-}
+    
+  }
