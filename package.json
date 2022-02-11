@@ -20,7 +20,7 @@
     "clean-css": "^4.2.3",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0",
-    "node-sass": "^5.0.0"
+    "node-sass": "^7.0.0"
   },
   "dependencies": {
     "browser-sync": "^2.26.13",
